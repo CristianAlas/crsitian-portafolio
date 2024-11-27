@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaYoutube, FaInstagram } from "react
 
 const socials = [
     { icon: <FaGithub />, path: "https://github.com/CristianAlas" },
-    { icon: <FaLinkedinIn />, path: "www.linkedin.com/in/cristian-alfredo-alas-castellanos-1633732aa" },
+    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/cristian-alfredo-alas-castellanos-1633732aa" },
     // { icon: <FaTwitter />, path: "" },
     { icon: <FaYoutube />, path: "https://www.youtube.com/watch?v=O-RILwe75vg" },
     { icon: <FaInstagram />, path: "https://www.instagram.com/cristian_alas16/"},
