@@ -9,7 +9,7 @@ import {
   FaJava,
   FaDocker,
   FaDatabase,
-  FaGithub,
+  FaBootstrap,
 } from "react-icons/fa";
 
 import {
@@ -18,13 +18,18 @@ import {
   SiPostgresql,
   SiAdobeillustrator,
   SiAdobephotoshop,
+  SiTypescript,
+  SiSpringboot,
+  SiDotnet, 
+  SiJsonwebtokens, 
+
 } from "react-icons/si";
 
 //about data
 const about = {
   title: "About me",
   description:
-    "I am a proactive and adaptable full-stack developer, with a solid foundation in backend (Java, Spring Boot) and frontend (React, Next.js), Database (MySql, Sql Server) among other tools. I am passionate about building web applications complete and efficient, from the server logic to the user interface. My skills in Photoshop and Illustrator also allow me to add a creative touch to projects.",
+    "I am a proactive and adaptable full-stack developer with a solid foundation in backend development (Java, Spring Boot) and frontend technologies (React, Next.js), as well as database systems (MySQL, SQL Server), among other tools. I am passionate about building complete and efficient web applications—from server-side logic to the user interface. My skills in Photoshop and Illustrator also allow me to add a creative touch to every project.",
   info: [
     {
       fieldName: "Name",
@@ -66,17 +71,30 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Developed a wide range of skills in graphic design and web development. My projects have ranged from brand identity design to building high-performing e-commerce websites.",
+    "I have developed a broad skill set in graphic design and software development, with projects ranging from brand identity creation to custom digital solutions.",
   items: [
+    {
+      company: "Freelance",
+      position: "Full Stack Developer",
+      project: "Classroom Monitoring System",
+      duration: "Feb 2025 – Present",
+    },
     {
       company: "Toquesito Aesthetics",
       position: "Graphic Designer",
-      duration: "2024 - Present",
+      duration: "Mar 2024 - Nov 2025",
     },
     {
-      company: "E-Commerce startup",
+      company: "Freelance",
       position: "Full Stack Developer",
-      duration: "2023 - 2024",
+      project: "User Management System",
+      duration: "May 2024 – July 2024",
+    },
+    {
+      company: "Freelance",
+      position: "Front End Developer",
+      project: "Personal Portfolio",
+      duration: "Aug 2024 – Sep 2024",
     },
   ],
 };
@@ -88,6 +106,11 @@ const education = {
   description:
     "Web developer with a solid foundation in Java, React and Spring Boot, constantly learning and seeking new challenges.",
   items: [
+    {
+      institution: "Technological University",
+      degree: "Software Engineering Technician",
+      duration: "2020 - present",
+    },
     {
       institution: "Academia Kodigo",
       degree: "Java Developer",
@@ -102,11 +125,6 @@ const education = {
       institution: "Online Course Udemy",
       degree: "Spring Boot: Backend Application",
       duration: "2023-2024",
-    },
-    {
-      institution: "Technological University",
-      degree: "Software Engineering Technician",
-      duration: "2020 - present",
     },
     {
       institution: "Mary Help of Christians Salesian School",
@@ -124,7 +142,7 @@ const skills = {
   skillList: [
     {
       icon: <FaJava />,
-      name: "Java Spring Boot",
+      name: "Java",
     },
     {
       icon: <FaDocker />,
@@ -134,18 +152,18 @@ const skills = {
       icon: <FaDatabase />,
       name: "MySQL & Sql Server",
     },
-    // {
-    //   icon: <SiPostgresql />,
-    //   name: "PostgreSQL",
-    // },
-    // {
-    //   icon: <FaHtml5 />,
-    //   name: "Html 5",
-    // },
-    // {
-    //   icon: <FaCss3 />,
-    //   name: "CSS 3",
-    // },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <FaHtml5 />,
+      name: "Html 5",
+    },
+    {
+      icon: <FaCss3 />,
+      name: "CSS 3",
+    },
     {
       icon: <FaJs />,
       name: "Javascript",
@@ -173,6 +191,26 @@ const skills = {
     {
       icon: <SiAdobeillustrator />,
       name: "Adobe illustrator",
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "Typescript",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "Spring boot",
+    },
+    {
+      icon: <SiDotnet />,
+      name: "ASP.NET Framework",
+    },
+    {
+      icon: <SiJsonwebtokens />,
+      name: "JWT",
     },
   ],
 };
@@ -221,6 +259,7 @@ export const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
+                <ScrollArea className="h-[330px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -232,17 +271,24 @@ export const Resume = () => {
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.position}
                           </h3>
-                          <div className="flex items-center gap-3">
-                            {/*dot*/}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                          <div className="flex flex-col gap-1 lg:items-start items-center">
+                            {/* Project (sin punto azul) */}
+                            <p className="text-white/60 text-sm italic">{item.project}</p>
+
+                            {/* Company (con punto azul) */}
+                            <div className="flex items-center gap-3">
+                              <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                              <p className="text-white/60">{item.company}</p>
+                            </div>
                           </div>
                         </li>
                       );
                     })}
                   </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
+
             {/*education*/}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">

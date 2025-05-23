@@ -116,7 +116,7 @@ const Work = () => {
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-[18px]  text-accent">
+                    <li key={index} className="text-[13px]  text-accent">
                       {item.name}
                       {/*remove the last comma*/}
                       {index !== project.stack.length - 1 && ","}

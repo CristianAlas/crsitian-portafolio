@@ -6,14 +6,14 @@ import Link from "next/link";
 const services = [
     {
         num: "01",
-        tittle: "Web Development",
+        tittle: "Front-End Development",
         description:
             "I am passionate about web development and enjoy creating unique digital experiences. Proficient in HTML, CSS, JavaScript, and popular frameworks like React and Angular.",
         href: "/contact"
     },
     {
         num: "02",
-        tittle: "Backend Development",
+        tittle: "Back-End Development",
         description:
             "I'm skilled in backend development, database management, and creating scalable systems. My tools include Spring Boot, Docker, microservices, and Don Web.",
         href: "/contact"
