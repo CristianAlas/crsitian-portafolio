@@ -92,7 +92,7 @@ const Work = () => {
     //get current slide index
     const currentIndex = swiper.activeIndex;
     // update project state based on curret slide index
-    setProject(projects[currentIndex]);
+    setProject(projects[currentIndex]); 
   };
 
   return (
