@@ -81,6 +81,37 @@ const projects = [
     ],
     image: "/assets/work/task.png",
     live: "",
+    github: "https://github.com/CristianAlas/FrontEnd-con-Next-Django.git",
+  },
+  {
+    num: "05",
+    category: "Full Stack",
+    title: "CaTree",
+    description:
+      "Modern link-in-bio solution that enables users to create a customizable landing page featuring all their social media profiles, websites, and important links. Built as an alternative to LinkTree with enhanced customization options and clean, responsive design.",
+    stack: [
+    { name: "React" },
+    { name: "Tailwind css" },
+    { name: "Express" },
+    { name: "MongoDB" },
+    ],
+    image: "/assets/work/5.png",
+    live: "https://catree-sv.netlify.app/",
+  },
+  {
+    num: "06",
+    category: "Full Stack",
+    title: "Classroom Monitoring System",
+    description:
+      "Comprehensive monitoring solution for the Faculty of Computer Science and Applied Sciences, providing real-time oversight and management of academic facilities and resources.",
+    stack: [
+    { name: "C#" },
+    { name: "ASP.NET Framwork" },
+    { name: "Boostrap" },
+    { name: "SQL Server" },
+    ],
+    image: "/assets/work/u.png",
+    live: "",
     github: "",
   },
 ];
@@ -148,7 +179,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link> */}
                 {/* Github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
