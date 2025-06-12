@@ -66,17 +66,23 @@ const projects = [
     live: "",
     github: "",
   },
-  // {
-  //   num: "04",
-  //   category: "Graphic Design",
-  //   title: "Advertising Design",
-  //   description:
-  //     "Focusing on audience and connection: Modern, elegant advertising design that connects with the public.",
-  //   stack: [{ name: "Adobe Photoshop" }, { name: "Adobe Ilustrator" }],
-  //   image: "/assets/work/0004.jpg",
-  //   live: "",
-  //   github: "",
-  // },
+  {
+    num: "04",
+    category: "Full Stack",
+    title: "Task App",
+    description:
+      "Minimalist web application for personal task management, built with Next.js and ultra-clean design. Allows creating, editing, completing, and deleting tasks intuitively with an elegant and functional interface.",
+    stack: [
+    { name: "Next.js" },
+    { name: "Tailwind css" },
+    { name: "Python" },
+    { name: "Django" },
+    { name: "SQLite" },
+    ],
+    image: "/assets/work/task.png",
+    live: "",
+    github: "",
+  },
 ];
 
 const Work = () => {
