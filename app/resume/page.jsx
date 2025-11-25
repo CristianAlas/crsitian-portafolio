@@ -142,7 +142,7 @@ const education = {
     },
     {
       institution: "CertiProf",
-      degree: "Scrum Foundation Professional Certification SFPC",
+      degree: "SFPC (Scrum Foundation)",
       duration: "2024",
     },
     {
