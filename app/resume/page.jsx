@@ -10,6 +10,7 @@ import {
   FaDocker,
   FaDatabase,
   FaBootstrap,
+  FaPython,
 } from "react-icons/fa";
 
 import {
@@ -22,7 +23,10 @@ import {
   SiSpringboot,
   SiDotnet, 
   SiJsonwebtokens, 
-
+  SiSpring,
+  SiSpringsecurity,
+  SiDjango,
+  SiPython
 } from "react-icons/si";
 
 //about data
@@ -74,10 +78,15 @@ const experience = {
     "I have developed a broad skill set in graphic design and software development, with projects ranging from brand identity creation to custom digital solutions.",
   items: [
     {
-      company: "Freelance",
+      company: "Guatemala Digital",
+      position: "Junior Development Analyst El Salvador",
+      duration: "Jul 2025 – Oct 2025",
+    },
+    {
+      company: "Thesis Project",
       position: "Full Stack Developer",
       project: "Classroom Monitoring System",
-      duration: "Feb 2025 – Present",
+      duration: "Feb 2025 – Jun 2025",
     },
     {
       company: "Toquesito Aesthetics",
@@ -109,7 +118,12 @@ const education = {
     {
       institution: "Technological University",
       degree: "Software Engineering Technician",
-      duration: "2020 - present",
+      duration: "2020 - 2025",
+    },
+    {
+      institution: "Código facilito",
+      degree: "Professional JAVA Course",
+      duration: "2025",
     },
     {
       institution: "Academia Kodigo",
@@ -118,13 +132,28 @@ const education = {
     },
     {
       institution: "Online Course Udemy",
+      degree: "Oracle SQL & PL/SQL",
+      duration: "2024",
+    },
+    {
+      institution: "Online Course Udemy",
       degree: "React: Creating full Stack webapp",
+      duration: "2024",
+    },
+    {
+      institution: "CertiProf",
+      degree: "Scrum Foundation Professional Certification SFPC",
       duration: "2024",
     },
     {
       institution: "Online Course Udemy",
       degree: "Spring Boot: Backend Application",
       duration: "2023-2024",
+    },
+    {
+      institution: "Cisco Networking Academy",
+      degree: "Python Fundamentals",
+      duration: "2023",
     },
     {
       institution: "Mary Help of Christians Salesian School",
@@ -143,6 +172,18 @@ const skills = {
     {
       icon: <FaJava />,
       name: "Java",
+    },
+    {
+      icon: <SiSpring />,
+      name: "Spring",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "Spring boot",
+    },
+    {
+      icon: <SiSpringsecurity />,
+      name: "Spring Security",
     },
     {
       icon: <FaDocker />,
@@ -201,16 +242,20 @@ const skills = {
       name: "Typescript",
     },
     {
-      icon: <SiSpringboot />,
-      name: "Spring boot",
-    },
-    {
       icon: <SiDotnet />,
       name: "ASP.NET Framework",
     },
     {
       icon: <SiJsonwebtokens />,
       name: "JWT",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiDjango />,
+      name: "Django",
     },
   ],
 };
